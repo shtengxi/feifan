@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-size:14px ;
+	font-family: "arial rounded mt bold";
+	background-color: #FFFFFF;
+}
+a{
+	text-decoration: none;
+	color:#000000;
+}
+.w{
+	width: 1200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear:after{
+	display: block;
+	content: " ";
+	clear:both;
+}
+.top{
+	min-width: 1200px;
+	height:38px;
+	background-color: #e1f3fd;
+}
+.header{
+	height:38px;
+	line-height: 38px;
+}
+
+/*左边导航*/
+.top .header .nav li{
+	float:left;
+	padding:0 11px;
+	position: relative;
+}
+.top .header .nav li a span.fa{
+	color:#d82936;
+}
+.top .header .nav li:hover a span.fa:before {
+  content: "\f106";
+}
+.top .header .nav li:hover{
+	background-color: darkgray;
+}
+.top .header .nav li:hover .nav-sed{
+	display: block;
+}
+.top .nav li .nav-sed{
+	position: absolute;
+	top:38px;
+	left:0;
+	width:100px;
+	background-color: darkgray;	
+	text-align: center;
+	display: none;
+}
+.top .nav li .nav-sed li{
+	padding:0;
+	width:100px;
+}
+.header .nav li .nav-sed li:hover{
+	background-color: #e1f3fd;
+	
+}
+.header .nav li .nav-sed li:hover a{
+	color:#d82936;
+}
+/*右边微信*/
+.top .wachet{
+	height: 38px;
+}
+.top .wachet li{
+	height: 38px;
+	padding-top:6px;
+	position: relative;
+}
+.top .wachet-e{
+	width:110px;
+	height:110px;
+	position: absolute;
+	top:38px;
+	right:0;
+	display: none;
+}
+.top .wachet-e img{
+	width: inherit;
+	height: inherit;
+}
+.top .wachet li:hover .wachet-e{
+	display: block;
+}
+/*头部logo区域*/
+.header-logo{
+	height:70px;
+	margin:22px 0;
+}
+.header-logo .logo img{
+	height:70px;
+}
+.header-logo ul{
+	text-align: center;
+	height:70px;
+	/*line-height:70px;*/
+	/*background-color: #b0b0b0;*/
+}
+.logo-right{
+	height:70px;
+	width: 200px;
+	line-height: 70px;
+	font-size: 16px;
+	
+}
+.header-logo ul li{
+	height:inherit;	
+	float:left;
+	margin-left:38px;
+	position: relative;
+	/*padding-top: 20px;
+	padding-bottom: 20px;*/
+}
+.header-logo ul li img{
+	/*padding-top:20px;*/
+     height:30px;
+     margin-right:10px;
+     position: relative;
+     top:10px;
+}
+.header-logo ul li span{
+	font-size: 14px;
+}
+/*banner区域*/
+.banner{
+	height:350px;
+	position: relative;
+	border: 1px solid #bbbbbb;
+}
+.banner ul li{
+	position: absolute;
+	left:0;
+	top:0;
+}
+.banner .points{
+	position: absolute;
+	left:50%;
+	bottom:20px;
+}
+.banner .points .point{
+	float: left;
+	margin:0 6px;
+	border-radius:50%;
+	width: 14px;
+	height:14px;	
+	border: 1px solid #FFFFFF;
+}
+.active{
+	background-color:#da2625;
+	border: solid 1px #da2625;
+}
