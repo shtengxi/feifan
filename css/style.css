@@ -226,21 +226,99 @@ a{
 	color: #FFFFFF;
 	font-size: 16px;
 }
-.class-nav ul li:first-child a span{
+.class-nav ul li:first-child a span.fa{
 	margin-right: 14px;
+	color:#FFFFFF;
+	font-size: 16px;
+}
+.class-nav ul li a:hover{
+	color:#DD2727;
 }
 
-
-
+.class-nav ul li:first-child a:hover{
+	color:#FFFFFF;
+}
+.class-nav ul li:first-child a:hover .fa{
+	color:#FFFFFF;
+	font-size: 16px;
+}
+/*课程中间新闻区域*/
 .news{
 	width: 732px;
 	height: 454px;
 	position: absolute;
 	left: 244px;
 	top:0;
-	background-color: green;
+	/*background-color: green;*/
 }
-
+.news-mid{
+	height: 40px;
+	width: inherit;
+	border-bottom: 1px solid #999999;
+}
+.news-mid .news-mid-nav{
+	height: 40px;
+	line-height: 40px;
+	width: 312px;
+}
+.news-mid .news-mid-nav li{
+	float: left;
+	height: 40px;
+	width: 104px;
+	padding: 0 24px;
+	/*border-bottom: 2px solid #DD2727;*/
+}
+.news-mid .news-mid-nav li a{
+	color: #333333;
+}
+.news-mid-active{
+	height: 414px;
+	width: 732px;
+}
+.news-mid-active-left{
+	width: 348px;
+	height:414px;
+}
+.item{
+	padding-top: 40px;
+	height: 102px;
+	width: 348px;
+}
+.item-1{
+	width: 42px;
+	height:42px;
+}
+.item-1 img{
+	width: 42px;
+	height:42px;
+}
+.item-right{
+	width: 266px;
+	height: 62px;
+}
+.item-title{
+	width: 266px;
+	height: 26px;
+	line-height: 26px;
+	
+}
+.item-title h3{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.item-4{
+	width: 266px;
+	height: 26px;
+	line-height: 13px;
+}
+.item-4 p{
+	font-size: 12px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/*课程right区域*/
 .hot-class{
 	width:202px;
 	height:454px;
