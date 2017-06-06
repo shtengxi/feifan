@@ -7,6 +7,7 @@
 		<title>非凡学院</title>
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		
 	</head>
 	<body>
 		<!--顶部	导航区域-->
@@ -62,7 +63,7 @@
 		</div>
 		<!--banner区域-->
 		<div class="banner w">
-			<ul>
+			<ul class="images">
 				<li><img src="img/1200-350-1.jpg" alt="" /></li>
 				<li><img src="img/1200-350-2.jpg" alt="" /></li>
 				<li><img src="img/1200-350-6.jpg" alt="" /></li>
@@ -72,15 +73,59 @@
 			</ul>
 			
 			<div class="points">
-				<span class="point active"></span>
+				<!--<span class="point active"></span>
 				<span class="point"></span>
 				<span class="point"></span>
-				<span class="point"></span>
+				<span class="point"></span>-->
 			</div>
 		</div>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var images=$(".images li");
+				var imageCount=$(".images li").length;
+				index=0;
+				
+				setInterval(function(){
+					
+					images.eq(index).fadeOut(300);
+					index=(index+1)%imageCount;
+					images.eq(index).fadeIn(300);
+					
+				},3000);
+			});
+			
+		</script>
 		
-		
-		
+		<!--课程区域-->
+		<div class="class w">
+			<div class="class-nav left">
+				<ul>
+					<li><a href=""><span class="fa fa-bars"></span>课程导航</a></li>
+					<li><span>平面UI  </span> 	<a href="">PS</a><a href="">AI</a></li>
+					<li><span>电商网销</span> <a href="">淘宝</a><a href="">SEO</a></li>
+					<li><span>网页设计 </span><a href="">DW</a><a href="">HTML</a></li>
+					<li><span>室内景观 </span><a href="">CAD</a><a href="">3D</a></li>
+					<li><span>淘宝美工</span> <a href="">美工</a><a href="">摄影</a></li>
+					<li><span>机械模具</span> <a href="">UG</a><a href="">CATIA</a></li>
+					<li><span>服装设计</span> <a href="">制版</a><a href="">立裁</a></li>
+					<li><span>影视美术 </span><a href="">影视</a><a href="">美术</a></li>
+					<li><span>网络工程</span> <a href="">思科</a><a href="">MCSE</a></li>
+					<li><span>学历企培 </span><a href="">本科</a><a href="">办公</a></li>										
+				</ul>
+			</div>
+			
+			<div class="news">
+				
+			</div>
+			
+			
+			<div class="hot-class right">
+				
+			</div>
+			
+			
+		</div>
 		
 		
 		
