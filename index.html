@@ -99,10 +99,11 @@
 		
 		<!--课程区域-->
 		<div class="class w">
+			<!--left课程导航-->
 			<div class="class-nav left">
-				<ul>
+				<ul class="nav-sed-l">
 					<li><a href=""><span class="fa fa-bars"></span>课程导航</a></li>
-					<li><span>平面UI  </span> 	<a href="">PS</a><a href="">AI</a></li>
+					<li><span>平面UI&nbsp;&nbsp;&nbsp;  </span> 	<a href="">PS</a><a href="">AI</a></li>
 					<li><span>电商网销</span> <a href="">淘宝</a><a href="">SEO</a></li>
 					<li><span>网页设计 </span><a href="">DW</a><a href="">HTML</a></li>
 					<li><span>室内景观 </span><a href="">CAD</a><a href="">3D</a></li>
@@ -113,8 +114,107 @@
 					<li><span>网络工程</span> <a href="">思科</a><a href="">MCSE</a></li>
 					<li><span>学历企培 </span><a href="">本科</a><a href="">办公</a></li>										
 				</ul>
+			<!--left课程导航       二级菜单-->
+				
+				<div class="class-sed">
+					<ul class="clear">
+						<li>平面设计全科班</li>
+						<li>平面设计全科班</li>
+						<li>平面设计全科班</li>
+						<li>平面设计全科班</li>
+					</ul>
+					<ul class="clear">
+						<li>淘宝运营实战班(电子商务A)</li>
+						<li>淘宝运营实战班(电子商务A)</li>
+						<li>淘宝运营实战班(电子商务A)</li>
+						<li>淘宝运营实战班(电子商务A)</li>
+						<li>淘宝运营实战班(电子商务A)</li>
+						<li>淘宝运营实战班(电子商务A)</li>
+						<li>淘宝运营实战班(电子商务A)</li>
+						<li>淘宝运营实战班(电子商务A)</li>
+					</ul>
+					<ul class="clear">
+						<li>网页设计师全科班</li>
+						<li>网页设计师全科班</li>
+						<li>网页设计师全科班</li>
+						<li>网页设计师全科班</li>
+						<li>网页设计师全科班</li>
+						<li>网页设计师全科班</li>
+					</ul>
+					<ul class="clear">
+						<li>CAD室内制图全科班</li>
+						<li>CAD室内制图全科班</li>
+						<li>CAD室内制图全科班</li>
+						<li>CAD室内制图全科班</li>
+						<li>CAD室内制图全科班</li>
+						<li>CAD室内制图全科班</li>
+						<li>CAD室内制图全科班</li>
+						<li>CAD室内制图全科班</li>
+						<li>CAD室内制图全科班</li>
+						<li>CAD室内制图全科班</li>
+					</ul>
+					<ul class="clear">
+						<li>淘宝商品摄影美化班</li>
+						<li>淘宝商品摄影美化班</li>
+						<li>淘宝商品摄影美化班</li>
+						<li>淘宝商品摄影美化班</li>
+					</ul>
+					<ul class="clear">
+						<li>CAD机械制图实战</li>
+						<li>CAD机械制图实战</li>
+						<li>CAD机械制图实战</li>
+						<li>CAD机械制图实战</li>
+					</ul>
+					<ul class="clear">
+						<li>服装CAD</li>
+						<li>服装CAD</li>
+						<li>服装CAD</li>
+						<li>服装CAD</li>
+					</ul>
+					<ul class="clear">
+						<li>国画/油画系列</li>
+						<li>国画/油画系列</li>
+						<li>国画/油画系列</li>
+						<li>国画/油画系列</li>
+					</ul>
+					<ul class="clear">
+						<li>电脑组装组网全科班</li>
+						<li>电脑组装组网全科班</li>
+						<li>电脑组装组网全科班</li>
+						<li>电脑组装组网全科班</li>
+					</ul>
+					<ul class="clear">
+						<li>办公自动化班</li>
+						<li>办公自动化班</li>
+						<li>办公自动化班</li>
+						<li>办公自动化班</li>
+					</ul>
+				</div>
 			</div>
-			
+		<script type="text/javascript">
+//			$(document).ready(function(){
+				$(".nav-sed-l li").hover(function(){
+					var index=$(this).index();
+					if(index>0){
+						$(".nav-sed-l li").removeClass("hover");
+						$(this).addClass("hover");
+						
+						$(".class-sed").show();
+						$(".class-sed ul").hide();
+						$(".class-sed ul:nth-child("+index+")").show();
+						
+					};
+				},function(){
+					
+					console.log();
+					
+				});
+				$(".class-nav").mouseleave(function(){
+					$(".nav-sed-l li").removeClass("hover");
+					$(".class-sed").hide();
+				});
+//			});
+		</script>
 			<div class="news">
 				<div class="news-mid">
 					<ul class="news-mid-nav">

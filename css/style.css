@@ -184,12 +184,13 @@ a{
 .class-nav{
 	width: 222px;
 	height:454px;
+	position: relative;
 	/*background-color: #b0b0b0;*/
 }
-.class-nav ul{
+.class-nav .nav-sed-l{
 	width: 222px;
 }
-.class-nav ul li{
+.class-nav .nav-sed-l li{
 	width: inherit;
 	height:42px;
 	line-height: 42px;
@@ -199,48 +200,90 @@ a{
 	border-right: 1px solid #dddddd;
 	
 }
-.class-nav ul li span{
+.class-nav .nav-sed-l li span{
 	margin-right: 22px;
 	color:#333333;
 }
-.class-nav ul li a{
+.class-nav .nav-sed-l li a{
 	padding-right: 22px;
+	font-size: 12px;
 	color:#999999;
 }
 
-.class-nav ul li:hover span{
+
+/*.class-nav .nav-sed-l li:hover .class-sed{
+	display: block;
+}*/
+
+
+
+.class-nav .nav-sed-l li.hover span{
 	color: #DD2727;
 }
-.class-nav ul li:hover a{
+.class-nav .nav-sed-l li:hover a{
 	color:#333333;
 }
 
-.class-nav ul li:first-child{
+.class-nav .nav-sed-l li:first-child{
 	height:34px;
 	line-height: 34px;
 	border-left: none;
 	border-right: none;
 	background-color: #dd2727;	
 }
-.class-nav ul li:first-child a{
+.class-nav .nav-sed-l li:first-child a{
 	color: #FFFFFF;
 	font-size: 16px;
 }
-.class-nav ul li:first-child a span.fa{
+.class-nav .nav-sed-l li:first-child a span.fa{
 	margin-right: 14px;
 	color:#FFFFFF;
 	font-size: 16px;
 }
-.class-nav ul li a:hover{
+.class-nav .nav-sed-l li a:hover{
 	color:#DD2727;
 }
 
-.class-nav ul li:first-child a:hover{
+.class-nav .nav-sed-l li:first-child a:hover{
 	color:#FFFFFF;
 }
-.class-nav ul li:first-child a:hover .fa{
+.class-nav .nav-sed-l li:first-child a:hover .fa{
 	color:#FFFFFF;
 	font-size: 16px;
+}
+
+.class-sed{
+	height:420px;
+	width: 620px;
+	background-color: #BBBBBB;
+	position: absolute;
+	left: 222px;
+	top:34px;
+	padding-top: 20px;
+	display: none;
+	z-index:999;
+}
+.class-sed ul{
+	width: 620px;
+	height: 400px;
+	display: none;
+	}
+.class-sed ul li{
+	border-top:1px solid #DDDDDD;
+	padding-left:1em ;
+	width: 290px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 20px;	
+}
+.class-sed ul li:nth-child(2n+1){
+	float: left;
+}
+.class-sed ul li:nth-child(2n){
+	float: right;
+}
+.class-sed ul li:hover{
+	color: #DD2727;
 }
 /*课程中间新闻区域*/
 .news{
