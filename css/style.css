@@ -309,7 +309,13 @@ a{
 	height: 40px;
 	width: 104px;
 	padding: 0 24px;
-	/*border-bottom: 2px solid #DD2727;*/
+	
+}
+.news-mid .news-mid-nav li:first-child{	
+	border-bottom: 2px solid #DD2727;
+}
+.news-mid .news-mid-nav li:first-child a{
+	color:#DD2727;
 }
 .news-mid .news-mid-nav li a{
 	color: #333333;
@@ -327,13 +333,25 @@ a{
 	height: 102px;
 	width: 348px;
 }
-.item-1{
+.item-left .item-1{
 	width: 42px;
 	height:42px;
+	border-radius: 50%;
+	/*background-color: #000000;*/
 }
 .item-1 img{
+	width: inherit;
+	height:inherit;
+	border-radius: 50%;
+}
+.item-t{
 	width: 42px;
-	height:42px;
+	height: 14px;
+	line-height: 14px;
+	margin-top: 12px;
+	padding-left: 5px;
+	color:#b0b0b0;
+	font-size: 12px;
 }
 .item-right{
 	width: 266px;
@@ -354,12 +372,14 @@ a{
 	width: 266px;
 	height: 26px;
 	line-height: 13px;
+	margin-top: 10px;
 }
 .item-4 p{
 	font-size: 12px;
+	color:#B0B0B0;
 	overflow:hidden;
 	text-overflow: ellipsis;
-	white-space: nowrap;
+	white-space:pre;
 }
 /*课程right区域*/
 .hot-class{
