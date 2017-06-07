@@ -36,5 +36,64 @@ $(document).ready(function(){
 					$(".nav-sed-l li").removeClass("hover");
 					$(".class-sed").hide();
 				});
+
+      //class-mid区域
+      
+      	$(".news-mid").hover(function(){
+      		var i=$(".news-mid-sed .news-mid-active").index();
+      
+      
+      
+		$(".news-mid-nav li").hover(function(){
+					var index=$(this).index();
+//					
+					$(".news-mid-nav li").removeClass("hover");
+					$(this).addClass("hover");
+//						
+//					$(".news-mid-active").show();
+//					$(".news-mid-active").hide();
+					
+					
+					if(i=index){
+					$(".news-mid-sed .news-mid-active").eq(index).show();
+					};
+//   				 console.log(i);
+
+//					
+				},function(){
+					
+//					console.log(1);
+					
+				});
+//				$(".class-nav").mouseleave(function(){
+//					$(".nav-sed-l li").removeClass("hover");
+//					$(".class-sed").hide();
+//				});
+
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 		
