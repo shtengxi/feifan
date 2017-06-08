@@ -490,3 +490,115 @@ a{
 	left:212px;
 	bottom: -1px;
 }
+.new-class-main{
+	height:518px;
+	width: inherit;
+	margin-top:28px;
+	
+}
+.new-class-main-up{
+	height: 258px;
+}
+.new-class-main-list{
+	width: 286px;
+	height:258px;
+	padding: 8px;
+	margin-right: 18px;
+	border: 1px solid #FFFFFF;	
+}
+.new-class-main-list:last-child{
+	margin-right: 0px;
+	
+}
+.new-class-main-list:hover{
+	border: 1px solid #e1e1e1;
+}
+.new-class-main-list-img{
+	width:270px;
+	height:180px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.new-class-main-list-img img{
+	width:270px;
+	height:180px;
+}
+.new-class-main-list-xia h3 a{
+	font-size: 14px;
+	color:#505050;
+}
+.new-class-main-list-xia h3 a:hover{
+	color: #dd2727;
+}
+
+.new-class-main-list-xia span{
+	font-size: 12px;
+	color:#999999
+}
+.new-class-main-list-xia span a{
+	font-size: 12px;
+	color:#999999;
+}
+.new-class-main-list-xia span:hover a{
+	color:green;
+}
+.new-class-price{
+	width: inherit;
+	height: 216px;
+	margin-top: 20px;
+}
+.new-class-price table{
+	width:562px;
+	height:216px;
+	font-size: :;px;
+	text-align: center;
+}
+.new-class-price table th{
+	border-bottom: 1px solid #999999;
+	color: #515151;
+}
+
+.new-class-price table td{
+	color:#554e56;
+}
+
+.new-class-price table tr th:first-child{
+	text-align: left;
+}
+.new-class-price table tr td:first-child{
+	text-align: left;
+}
+.new-class-price table tr td:first-child span{
+	color:#57bee7;
+}
+.new-class-price table tr td:first-child a{
+	color:#554e56;
+}
+.new-class-price table tr td:first-child:hover a{
+	color:#dd2727;
+}	
+
+/*******************报名成功****************/	
+.baoming{
+	height: 36px;
+	width: inherit;
+	border-bottom: 1px solid #999999;
+	position: relative;
+}
+.baoming .baoming-left{
+	width: 112px;
+	height:36px;
+	line-height: 36px;
+	border-bottom: 2px solid #dd2727;
+	text-align: center;
+}
+.baoming-cg{
+	width: 1088px;
+	height: 36px;
+	line-height: 36px;
+	direction: left;
+	behavior:scroll;
+	position: absolute;
+	top: 0;
+	left: 112px;
+}
