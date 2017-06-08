@@ -446,3 +446,47 @@ a{
 	font-size: 14px;
 	color:#a6b4bf;
 }
+/*最新开班 区域  ***********/
+.new-class{
+	height:568px;
+	margin-top:42px;
+	/*background-color: gainsboro;*/
+}
+.new-class-header{
+	height: 50px;
+	border-bottom: 1px solid #e1e1e1;
+	position: relative;
+}
+.new-class-header-title{
+	height: 50px;
+	width: 212px;
+	line-height: 50px;	
+}
+.new-class-header-title h3{
+	color:#2a2a2a;
+	font-size: 22px;
+}
+.new-class-header ul{
+	width:954px;
+	height: 38px;
+	margin-top: 12px;
+
+}
+.new-class-header ul li{
+	float: left;
+	width: 106px;
+	padding: 0 25px;
+	line-height: 38px;
+}
+.new-class-header ul li a{
+	font-size: 14px;
+	color: #545454;
+}
+.line{
+	height:2px;
+	width: 106px;
+	background-color: #db272a;
+	position: absolute;
+	left:212px;
+	bottom: -1px;
+}
