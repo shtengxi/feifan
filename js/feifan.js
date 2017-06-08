@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//banner轮播			
+	//banner轮播			*************************************
 		$(document).ready(function(){
 				var images=$(".images li");
 				var imageCount=$(".images li").length;
@@ -15,10 +15,11 @@ $(document).ready(function(){
 			});			
 				
 							
-	//class-left区域			
+	//class-left区域	  ****************************************		
 				$(".nav-sed-l li").hover(function(){
 					var index=$(this).index();
 					if(index>0){
+						
 						$(".nav-sed-l li").removeClass("hover");
 						$(this).addClass("hover");
 						
@@ -37,44 +38,30 @@ $(document).ready(function(){
 					$(".class-sed").hide();
 				});
 
-      //class-mid区域
-      
-      	$(".news-mid").hover(function(){
-      		var i=$(".news-mid-sed .news-mid-active").index();
-      
-      
-      
+//      class-mid区域    ****************************************    	
+                 
 		$(".news-mid-nav li").hover(function(){
-					var index=$(this).index();
-//					
-					$(".news-mid-nav li").removeClass("hover");
-					$(this).addClass("hover");
-//						
-//					$(".news-mid-active").show();
-//					$(".news-mid-active").hide();
+				var index=$(this).index();
+				$(".news-mid-nav li").removeClass("first");
+				$(".news-mid-nav li").removeClass("hover");
+				$(this).addClass("hover");
 					
-					
-					if(i=index){
-					$(".news-mid-sed .news-mid-active").eq(index).show();
-					};
-//   				 console.log(i);
-
-//					
-				},function(){
+				$(".news-mid-sed .news-mid-active").hide();
+				$(".news-mid-sed .news-mid-active").eq(index).show();				
+		},function(){
 					
 //					console.log(1);
 					
-				});
-//				$(".class-nav").mouseleave(function(){
-//					$(".nav-sed-l li").removeClass("hover");
-//					$(".class-sed").hide();
-//				});
+		});
 
-	});
-
-
-
-
+//class-right  区域*********************************************
+		$(".hot-class-img").mousemove(function(){
+			$(".hot-class-img-sed").animate({"top":58+"px"},10);
+		});
+		$(".hot-class-img").mouseleave(function(){
+			$(".hot-class-img-sed").animate({"top":100+"px"},10);
+		});
+		
 
 
 
