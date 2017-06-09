@@ -29,6 +29,23 @@ a{
 	content: " ";
 	clear:both;
 }
+/***************侧边部分*********************************************/
+.aside{
+	/*width: 90px;
+	height:440px;*/
+	z-index: 999;
+	position: absolute;
+	left:10;
+	top:0;
+	display: none;
+}
+/*.aside img{
+	width: 90px;
+	height:440px;
+}*/
+
+
+/**********顶部********************************************************************/
 .top{
 	min-width: 1200px;
 	height:38px;
@@ -446,7 +463,7 @@ a{
 	font-size: 14px;
 	color:#a6b4bf;
 }
-/*最新开班 区域  ***********/
+/*最新开班 区域  ********************************************************/
 .new-class{
 	height:568px;
 	margin-top:42px;
@@ -622,4 +639,43 @@ a{
 }
 .baoming-cg p{
 	font-size: 16px;
+}
+/*    师资力量       ***********************************************/
+.teacher{
+	height: 340px;
+	margin-top: 76px;
+}
+.teacher-header{
+	width: inherit;
+	height:66px;
+	background-color: green;
+}
+.teacher-title{
+	width: 200px;
+	height:66px;
+	font-size: 20px;	
+}
+.teacher-l{
+	width: 68px;
+	height:66px;
+	line-height: 68px;
+	font-size: 12px;	
+}
+.teacher-l span{
+	color:#52525a;
+}
+.teacher-l span.fa{
+	color:#727886;
+}
+.teacher-main{	
+	height: 260px;
+	background-color: yellow;
+}
+.teacher-list li .photo{
+	width:270px;
+	height:180px;
+}
+.teacher-list li .photo{
+	width:270px;
+	height:180px;
 }

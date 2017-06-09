@@ -90,9 +90,31 @@ $(document).ready(function(){
 //					console.log(1);
 					
 		});
-
-
-
+//侧边部分*******************************************************************
+//		var H=$("body")[0].clientHeight;
+//		var asideH=$(".aside").height();
+//		var topH=(H-asideH)/2;
+//		var scrollTop=$(document).scrollTop();
+//		
+////		$
+////		$(".aside").animate({"top":topH+scrollTop+"px"},500);
+//		$(document).scroll(function(){
+//					H = $("body")[0].clientHeight;
+//					scrollTop = $(document).scrollTop();
+//					$(".aside").stop().animate({"top":(H-asideH)/2+scrollTop+"px"},800);
+//				});
+		
+				var H = $(window).height;
+				var asideH = $(".aside").height();
+				var scrollTop = $(document).scrollTop();
+				$(".aside").css("top",(H-asideH)/2+scrollTop+"px");
+				
+				
+				$(document).scroll(function(){
+					H = $(window).height();
+					scrollTop = $(document).scrollTop();
+					$(".aside").stop().animate({"top":(H-asideH)/2+scrollTop+"px"},800);
+				});
 
 
 

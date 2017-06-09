@@ -73,3 +73,20 @@ ul li:hover a{
 	font-size: 16px;
 	color: #2a2f33;
 }
+.edu-jianjie{
+	width: 950px;
+	height:1820px;
+	padding-top: 40px;
+	padding-left: 26px;
+}
+.edu-img{
+	height:378px;
+	width: 500px;
+	/*position: relative;
+	top:40px;
+	left: 26px;*/
+}
+.edu-img img{
+	height:378px;
+	width: 500px;
+}
