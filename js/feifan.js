@@ -4,13 +4,17 @@ $(document).ready(function(){
 				var images=$(".images li");
 				var imageCount=$(".images li").length;
 				index=0;
-				
+				for(var i = 0 ;i<imageCount;i++){
+				$(".points").append("<span class='point'></span>")
+			}
+				$(".points").css("margin-left","-"+($(".points").width()/2)+"px").children().eq(0).addClass("active");
+			var points = $(".points span");
 				setInterval(function(){
 					
 					images.eq(index).fadeOut(300);
 					index=(index+1)%imageCount;
 					images.eq(index).fadeIn(300);
-					
+					points.removeClass("active").eq(index).addClass("active");
 				},3000);
 			});			
 				
@@ -62,8 +66,30 @@ $(document).ready(function(){
 			$(".hot-class-img-sed").animate({"top":100+"px"},10);
 		});
 		
-
-
+//最新开班区域***********************************************************
+		$(".new-class-header .new-class-nav li").hover(function(){
+				var index=$(this).index();
+				var offsetleft = $(this).offset().left - $(".new-class").offset().left;
+				var width = $(this).width();
+				var left = offsetleft+width/2-30;
+				$(".new-class .line").stop(true,true);
+				$(".new-class .line").animate({
+					left:left+"px"
+				},300);
+				
+//				$(".new-class-nav li a").css("color","#333").eq(index).css("color","#D82936");
+				$(".new-class-header .new-class-nav li a").css("color","#545454").eq(index).css("color","#dd2727");
+				$(".new-class-nav li").removeClass("first");
+				$(".new-class-nav li").removeClass("hover");
+				$(this).addClass("hover");
+					
+				$(".new-class-sed .new-class-main").hide();
+				$(".new-class-sed .new-class-main").eq(index).show();				
+		},function(){
+					
+//					console.log(1);
+					
+		});
 
 
 

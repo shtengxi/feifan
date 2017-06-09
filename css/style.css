@@ -312,10 +312,10 @@ a{
 	padding: 0 24px;
 	
 }
-.news-mid .news-mid-nav .first{	
+.news-mid .news-mid-nav li.first{	
 	border-bottom: 2px solid #DD2727;
 }
-.news-mid .news-mid-nav .first a{
+.news-mid .news-mid-nav li.first a{
 	color:#DD2727;
 }
 .news-mid .news-mid-nav li.hover{	
@@ -466,22 +466,30 @@ a{
 	color:#2a2a2a;
 	font-size: 22px;
 }
-.new-class-header ul{
+.new-class-header .new-class-nav{
 	width:954px;
 	height: 38px;
 	margin-top: 12px;
 
 }
-.new-class-header ul li{
+.new-class-header .new-class-nav li{
 	float: left;
 	width: 106px;
 	padding: 0 25px;
 	line-height: 38px;
 }
-.new-class-header ul li a{
+.new-class-header .new-class-nav li a{
 	font-size: 14px;
 	color: #545454;
 }
+.new-class-header .new-class-nav li:first-child a{
+  	color: #DD2727;
+}
+.new-class-header .new-class-nav li.hover a{
+	color: #DD2727;
+}
+
+
 .line{
 	height:2px;
 	width: 106px;
@@ -490,11 +498,18 @@ a{
 	left:212px;
 	bottom: -1px;
 }
-.new-class-main{
-	height:518px;
+.new-class-sed{
+	height:482px;
 	width: inherit;
 	margin-top:28px;
-	
+}
+.new-class-main{
+	height:482px;
+	width: inherit;
+	display: none;	
+}
+.new-class-main:first-child{
+	display: block;
 }
 .new-class-main-up{
 	height: 258px;
@@ -591,6 +606,9 @@ a{
 	line-height: 36px;
 	border-bottom: 2px solid #dd2727;
 	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0px;
 }
 .baoming-cg{
 	width: 1088px;
@@ -601,4 +619,7 @@ a{
 	position: absolute;
 	top: 0;
 	left: 112px;
+}
+.baoming-cg p{
+	font-size: 16px;
 }
