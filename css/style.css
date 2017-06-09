@@ -37,7 +37,7 @@ a{
 	position: absolute;
 	left:10;
 	top:0;
-	/*display: none;*/
+	display: none;
 }
 /*.aside img{
 	width: 90px;
@@ -671,11 +671,21 @@ a{
 	height: 260px;
 	background-color: yellow;
 }
-.teacher-list li .photo{
-	width:270px;
-	height:180px;
+.teacher-list{
+	height:260px;
+	padding: 0 4px 8px 8px;
 }
 .teacher-list li .photo{
 	width:270px;
 	height:180px;
+}
+
+.teacher-list li .photo{
+	width:270px;
+	height:180px;
+}
+.teacher-name{
+	width: 270px;
+	height: 72px;
+	line-height: 24px;	
 }
