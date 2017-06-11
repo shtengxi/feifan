@@ -1,0 +1,168 @@
+*{
+	box-sizing: border-box;
+}
+.box-left{
+	width: 220px;
+	height: 640px;	
+	border: 1px solid #999999;
+}
+
+.box-js,.xqfb{
+	width: 219px;
+	height: 50px;	
+	line-height: 50px;
+	padding-left: 28px;
+	
+	/*padding-right: 28px;*/
+	border-bottom: 1px solid #999999;	
+}
+.box-js,.xqfb h3{
+	font-size: 16px;	
+}
+.edu-l{
+	width: 100px;
+	height: 50px;
+}
+.edu-r{
+	width:90px ;
+	height:50px;
+	line-height: 50px;
+	
+	color:#DD2727;
+	/*background-color: #999999;*/
+}
+.edu-r span.fa{
+	font-size:14px ;
+	padding-left:43px ;
+}
+.box-js-nav{
+	width: 219px;
+	height: 272px;
+	line-height: 40px;
+
+	border-bottom: 1px solid #999999;	
+}
+
+.xqfb-nav{
+	width: 220px;
+	height: 266px;
+	line-height: 40px;	
+	padding-left: 28px;
+}
+ul{
+	width: 218px;	
+}
+ul li{
+	padding-left: 28px;
+	width: inherit;
+}
+ul li a{
+	font-size: 14px;
+	color: #584f62;
+}
+ul li:hover{
+	background-color: #f3f3f3;
+}
+ul li:hover a{
+	color:#DD2727;
+}
+/****右边box*****/
+.box-main{
+	width: 951px;
+	height: 1870px;
+	border: 1px solid #999999;		
+}
+.box-main-title{
+	width: 950px;
+	height:50px;
+	line-height: 50px;
+	padding-left: 16px;
+	border-bottom: 1px solid #999999;	
+}
+.box-main-title h3{
+	font-size: 16px;
+	color: #2a2f33;
+}
+.classify{
+	width: 950px;
+	height:1820px;
+	padding-top: 40px;
+	padding-left: 26px;
+}
+.edu-img{
+	height:378px;
+	width: 500px;
+	/*position: relative;
+	top:40px;
+	left: 26px;*/
+}
+.edu-img img{
+	height:378px;
+	width: 500px;
+}
+
+
+/************xuexizixun wangye****************/
+.box-left-1{
+	width: 220px;
+	height: 493px;	
+	border: 1px solid #999999;
+}
+.box-js-nav-1{
+	width: 218px;
+	height: 442px;
+	line-height: 40px;
+	/*padding-left: 28px;*/
+}
+.box-js-nav-1 ul{
+	width: 218px;
+	height: 440px;
+	line-height: 44px;
+}
+.box-main-study{
+	width: 950px;
+	height:1428px;
+	border: 1px solid #999999;		
+	
+}
+.classify-study{
+	width: 950px;
+	height:1378px;
+	padding-top: 10px;
+	padding-left: 22px;	
+	padding-right: 22px;	
+}
+.item{
+	width:906px;
+	height:156px;
+	padding-top: 18px;
+	border-bottom: 1px solid #999999;
+}
+.item-2-1{
+	width: 702px;
+	height:156px
+}
+.item-1{
+	width: 702px;	
+	/*height: inherit;*/
+	margin-bottom: 22px;
+}
+.item-1 p{
+	color: #B0B0B0;
+}
+.item h3:hover{
+	color:#DD2727;
+}
+.item-2-2{
+	width:124px;
+	height:124px;
+	border-radius: 50%;
+	/*background-color: #FFFFFF;*/
+	z-index: 999;
+}
+.item-2-2 img{
+	width:124px;
+	height:124px;
+	border-radius: 50%;
+}
+

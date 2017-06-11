@@ -188,9 +188,9 @@ a{
 	height:14px;	
 	border: 1px solid #FFFFFF;
 }
-.active{
+.banner .points .active{
 	background-color:#da2625;
-	border: solid 1px #da2625;
+	border:1px solid #da2625;
 }
 /*课程区域*/
 .class{
