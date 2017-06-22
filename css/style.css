@@ -718,6 +718,15 @@ a{
 	height: 72px;
 	line-height: 24px;	
 }
+/*x学院作品******学院作品******************/
+.study-works{
+	height: 338px;
+	/*background-color: blue;*/	
+}
+.study-works-img{
+	margin-top:30px;
+}
+
 /******就业明星************就业明星*********就业明星****就业明星**/
 .star{
 	height:200px;
